@@ -32,4 +32,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 150
 #define RGBLIGHT_SLEEP
 #define COMBO_TERM 25
+#define ENCODER_RESOLUTION 6
 //#define COMBO_COUNT 3
