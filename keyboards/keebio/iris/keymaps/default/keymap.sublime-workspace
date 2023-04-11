@@ -1,0 +1,342 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"WinA",
+				"WinActivate"
+			],
+			[
+				"KC_",
+				"KC_RGHT"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"merg",
+				"Merge Windows"
+			],
+			[
+				"mer",
+				"Merge Windows"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Marcus-Ryzen/Desktop/E.txt",
+		"/C/Users/Marcus-Ryzen/Documents/GitHub/qmk_firmware/keyboards/keebio/iris/keymaps/kudde/keymap.c",
+		"/C/Users/Public/Documents/NI Resources/image/cinematic studio solo strings/cinematic studio solo strings.meta",
+		"/C/Users/Public/Documents/NI Resources/image/Lass Full 3 Library/lass full 3 library.meta",
+		"/C/Users/Public/Documents/NI Resources/image/la scoring strings 3/la scoring strings 3.meta",
+		"/C/Users/Public/Documents/NI Resources/database/pal_2.2520.0.0/categories.db",
+		"/C/Users/Public/Documents/NI Resources/_DatabaseResources/color/color.meta",
+		"/C/Users/Public/Documents/NI Resources/_DatabaseResources/color/color.db-journal",
+		"/C/Users/Public/Documents/NI Resources/_DatabaseResources/color/color.db",
+		"/C/Users/Public/Documents/NI Resources/dist_database/omnisphere/color.json",
+		"/C/Users/Public/Documents/NI Resources/image/spectrasonics/omnisphere/omnisphere.meta",
+		"/C/Users/Marcus-Ryzen/Desktop/Video Guides/NKS_Library_Omnisphere_Free/Database Files/image/spectrasonics/omnisphere/omnisphere.meta",
+		"/C/Users/Public/Documents/NI Resources/image/scorpio/origin x.meta",
+		"/C/Users/Public/Documents/NI Resources/image/origin x/origin x.meta",
+		"/C/Users/Public/Documents/NI Resources/image/serato/serato sample/serato sample.meta",
+		"/C/Users/Marcus-Ryzen/Documents/GitHub/qmk_firmware/keyboards/keebio/sinc/rev3/config.h",
+		"/C/Users/Marcus-Ryzen/Documents/GitHub/qmk_firmware/keyboards/keebio/sinc/keymaps/kudde/config.h",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/keebio/sinc/rev3/config.h",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/keebio/sinc/rev3/rules.mk",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/keebio/sinc/keymaps/kudde/keymap.c",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/keebio/sinc/keymaps/kudde/config.h",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/keebio/sinc/keymaps/kudde/rules.mk",
+		"/C/Users/Marcus-Ryzen/Documents/GitHub/qmk_firmware/keyboards/keebio/sinc/keymaps/kudde/rules.mk",
+		"/C/Users/Marcus-Ryzen/Documents/GitHub/qmk_firmware/keyboards/keebio/sinc/rules.mk",
+		"/C/Users/Marcus-Ryzen/Documents/GitHub/qmk_firmware/keyboards/keycapsss/plaid_pad/keymaps/kudde/config.h",
+		"/C/Users/Marcus-Ryzen/Documents/GitHub/qmk_firmware/keyboards/keycapsss/plaid_pad/config.h",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/keebio/sinc/sinc.c",
+		"/C/Users/Marcus-Ryzen/Documents/GitHub/qmk_firmware/keyboards/keebio/sinc/sinc.c",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/keebio/sinc/rules.mk",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/keebio/sinc/info.json",
+		"/C/Users/Marcus-Ryzen/Documents/GitHub/qmk_firmware/keyboards/kbdfans/kbd75/rules.mk",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/kbdfans/kbd75/rules.mk",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/kbdfans/kbd75/readme.md",
+		"/C/Users/Marcus-Ryzen/Documents/GitHub/qmk_firmware/keyboards/kbdfans/kbd75/kbd75.h",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/kbdfans/kbd75/kbd75.h",
+		"/C/Users/Marcus-Ryzen/Documents/GitHub/qmk_firmware/keyboards/kbdfans/kbd75/kbd75.c",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/kbdfans/kbd75/kbd75.c",
+		"/C/Users/Marcus-Ryzen/Documents/GitHub/qmk_firmware/keyboards/kbdfans/kbd75/config.h",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/kbdfans/kbd75/config.h",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/keebio/iris/keymaps/kudde/keymap.c",
+		"/C/Users/Marcus-Ryzen/Desktop/keyboards backup/kbdfans/kbd75/keymaps/kudde/keymap.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keycapsss/plaid_pad/keymaps/kudde/keymap.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/quantum/color.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/keymaps/kudde/keymap.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/keymaps/kudde/rules.mk",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/rev3/config.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/keymaps/kudde/config.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keycapsss/plaid_pad/config.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keycapsss/plaid_pad/keymaps/kudde/config.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keycapsss/plaid_pad/keymaps/kudde/rules.mk",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/iris/keymaps/kudde/keymap.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/kbdfans/kbd75/keymaps/kudde/keymap.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keycapsss/plaid_pad/rev3/rules.mk",
+		"/C/Users/Marcus-Ryzen/AppData/Local/BraveSoftware/Brave-Browser/User Data/Default/Extensions/ncppfjladdkdaemaghochfikpmghbcpc/2.0.0_0/manifest.json",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/quantum/rgb_matrix/animations/typing_heatmap_anim.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/encoder_actions.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keycapsss/plaid_pad/keymaps/kudde/glcdfont.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keycapsss/plaid_pad/keymaps/kudde/readme.md",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/quantum/keymap_introspection.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keycapsss/plaid_pad/keymaps/kuddemidi/config.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keycapsss/plaid_pad/keymaps/midi/hid-midi.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keycapsss/plaid_pad/keymaps/midi/glcdfont.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keycapsss/plaid_pad/keymaps/midi/rules.mk",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keycapsss/plaid_pad/keymaps/midi/keymap.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keycapsss/plaid_pad/keymaps/midi/config.h",
+		"/C/Users/Marcus-Ryzen/Documents/Image-Line/FL Studio/Settings/Hardware/Native Instruments/script/device_setup/config.py",
+		"/C/Users/Marcus-Ryzen/Documents/Image-Line/FL Studio/Settings/Hardware/flstudio-arturia-keylab-mk2-main/config.py",
+		"/G/Sounds/SYRE.nfo",
+		"/C/Users/Marcus-Ryzen/Documents/Image-Line/FL Studio/Settings/Themes/Dark Blue 2.flstheme",
+		"/C/Users/Marcus-Ryzen/Documents/Image-Line/FL Studio/Settings/Themes/Blue Pink.flstheme",
+		"/C/Users/Marcus-Ryzen/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/AutoHotkey.ahk",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/quantum/rgb_matrix/rgb_matrix.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/rev3/info.json",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/rev3/rev3.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/iris/rev2/config.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/kbdfans/kbd75/keymaps/kudde/rules.mk",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/kbdfans/kbd75/keymaps/kudde/config.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/kbdfans/kbd75/rev2/rules.mk",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/kbdfans/kbd75/rules.mk",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/kbdfans/kbd75/config.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/sinc.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/sinc.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/info.json",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/rules.mk",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/keymaps/via/keymap.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/keymaps/sethBarberee/config.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/rev3/rules.mk",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/rev1/rules.mk",
+		"/C/Users/Marcus-Ryzen/Documents/Image-Line/FL Studio/Settings/Hardware/Native-Instruments-Komplete-Kontrol/config.py",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/rev3/halconf.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/rev3/mcuconf.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/rev1/rev1.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/readme.md",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/keymaps/draevin/keymap.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/keymaps/iso/keymap.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/keymaps/lickel/rules.mk",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/keymaps/lickel/keymap.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/keymaps/sethBarberee/keymap.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/users/sethBarberee/sethBarberee.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/users/sethBarberee/sethBarberee.h",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/keymaps/via/rules.mk",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/sinc/keymaps/default/keymap.c",
+		"/C/Users/Marcus-Ryzen/qmk_firmware/keyboards/keebio/iris/keymaps/ludde/keymap.c",
+		"/C/Users/Public/Documents/NI Resources/image/PluginGuru/Unify/Unify.meta",
+		"/C/Users/Marcus-Ryzen/Documents/Image-Line/FL Studio/Settings/Hardware/Native-Instruments-Komplete-Kontrol/controller_definition.py",
+		"/C/Users/Marcus-Ryzen/Documents/Image-Line/FL Studio/Settings/Hardware/Native-Instruments-Komplete-Kontrol/device_Komplete Kontrol (S-Series Custom MIDI Map).py",
+		"/C/Users/Marcus-Ryzen/Documents/Image-Line/FL Studio/Settings/Hardware/Native-Instruments-Komplete-Kontrol/mixer_definition.py",
+		"/H/Kontakt/AK/Native.Instruments.Alicias.Keys.KONTAKT.DVDR-DYNAMiCS/dynamics.nfo",
+		"/E/Bob Moog Tribute Library Installer/Spectrasonics.Omnisphere.Bob.Moog.Tribute.Library.Addon-AiR.nfo",
+		"/C/Users/Public/Documents/NI Resources/image/artist series - tina guo acoustic cello legato/artist series - tina guo.meta",
+		"/C/Users/Public/Documents/NI Resources/image/artist series - tina guo acoustic cello legato/artist series - tina guo acoustic cello legato.meta",
+		"/C/Users/Public/Documents/NI Resources/image/voice of wind adey/voice of wind adey.meta",
+		"/C/Program Files/Common Files/Native Instruments/Voice Of Wind Connie/PAResources/_DatabaseResources/color/color.meta",
+		"/C/Program Files/Common Files/Native Instruments/Voice Of Wind Connie/PAResources/image/Voice Of Wind Connie/Voice Of Wind Connie.meta",
+		"/C/Program Files/Common Files/Native Instruments/Voice Of Wind Connie/PAResources/database/PAL/PAL.meta",
+		"/C/Program Files/Common Files/Native Instruments/Voice Of Wind Connie/PAResources/_DatabaseResources/shortname/shortname.meta",
+		"/C/Program Files/Common Files/Native Instruments/Voice Of Wind Connie/PAResources/_DatabaseResources/shortname/shortname.db",
+		"/C/Users/Public/Documents/NI Resources/image/spitfire audio/spitfire audio - originals - intimate strings/spitfire audio - originals - intimate strings.meta",
+		"/C/Users/Public/Documents/NI Resources/image/serato sample/serato sample.meta",
+		"/C/Users/Public/Documents/NI Resources/image/spitfire audio/spitfire audio - bbc symphony orchestra/spitfire audio - bbc symphony orchestra.meta",
+		"/C/Users/Public/Documents/NI Resources/dist_database/serato/serato sample/shortname.json",
+		"/C/Users/Public/Documents/NI Resources/dist_database/serato/serato sample/categories.json",
+		"/C/Users/Public/Documents/NI Resources/dist_database/serato sample/color.json",
+		"/C/Users/Public/Documents/NI Resources/dist_database/serato/serato sample/color.json",
+		"/C/Users/Marcus-Ryzen/Desktop/OXYGENPROv2/OXYGENPROv2/device_OYXGENPROv2.py",
+		"/C/Marcus/Chrome Theme JSON/Pure Black Brave/1.2.0_0/manifest.json",
+		"/C/Users/Marcus-Ryzen/Documents/Image-Line/FL Studio/Settings/Hardware/Native-Instruments-Komplete-Kontrol/device_KompleteKontrol.py",
+		"/C/Users/Marcus-Ryzen/Desktop/M32.ahk"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "keymap.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 290.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
