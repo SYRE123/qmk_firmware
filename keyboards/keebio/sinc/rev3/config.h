@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define I2C1_SCL_PIN GP22
 #define I2C1_SDA_PIN GP23
 
-#define RGB_MATRIX_HUE_STEP 5
+#define RGB_MATRIX_HUE_STEP 1
 // RGB Matrix
 #define ENABLE_RGB_MATRIX_SOLID_COLOR = 1
 // #define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
