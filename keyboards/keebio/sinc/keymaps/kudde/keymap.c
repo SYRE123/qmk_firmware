@@ -5,6 +5,7 @@
 enum {
   TD_QIT,
   TD_MIN,
+  TD_EMO,
 };
 
 enum combos {
@@ -27,32 +28,33 @@ enum custom_keycodes {
 //Tapdance
 #define KC_TD1 TD(TD_QIT)
 #define KC_TD2 TD(TD_MIN)
+#define KC_TD3 TD(TD_EMO)
 
 //Emojis
-#define KC_EM1 RALT(KC_Y)
-#define KC_EM2 RALT(KC_U)
-#define KC_EM3 RALT(KC_I)
-#define KC_EM4 RALT(KC_O)
-#define KC_EM5 RALT(KC_P)
-#define KC_EM6 RALT(KC_LBRC)
-#define KC_EM7 RALT(KC_RBRC)
-#define KC_EM8 RALT(KC_BSLS)
-#define KC_EM9 RALT(KC_H)
-#define KC_EM10 RALT(KC_J)
-#define KC_EM11 RALT(KC_K)
-#define KC_EM12 RALT(KC_L)
-#define KC_EM13 RALT(KC_SCLN)
-#define KC_EM14 RALT(KC_QUOT)
-#define KC_EM15 RALT(KC_N)
-#define KC_EM16 RALT(KC_M)
+#define KC_EM1 LCTL(KC_P0)
+#define KC_EM2 (KC_P9)
+#define KC_EM3 (KC_P5)
+#define KC_EM4 LCTL(KC_P1)
+#define KC_EM5 (KC_P4)
+#define KC_EM6 LCTL(KC_P2)
+#define KC_EM7 LCTL(KC_P5)
+#define KC_EM8 LCTL(KC_P4)
+#define KC_EM9 (KC_P6)
+#define KC_EM10 LCTL(KC_P3)
+#define KC_EM11 (KC_P0)
+#define KC_EM12 (KC_P1)
+#define KC_EM13 (KC_P8)
+#define KC_EM14 (KC_P7)
+#define KC_EM15 (KC_P2)
+#define KC_EM16 (KC_P3)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_80(
     KC_ESC,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_HOME,  KC_F18,
-    KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL, _______,  KC_BSPC, KC_DEL,
+    KC_TD3,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL, _______,  KC_BSPC, KC_DEL,
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS, KC_PGUP,
     KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,          KC_ENT,  KC_PGDN,
-    KC_LSFT,          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, OSM(MOD_RALT), KC_UP,   KC_TD1,
+    KC_LSFT,          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, KC_UP,   KC_TD1,
     KC_LCTL, KC_LGUI, KC_LALT, MO(1),   _______,  LT(2, KC_SPC), _______,           KC_SPC,  KC_RALT, KC_RCTL, MO(3), KC_LEFT, KC_DOWN, KC_RGHT
   ),
   [1] = LAYOUT_80(
@@ -117,6 +119,7 @@ tap_dance_action_t tap_dance_actions[] = {
   //Tap once for change track, twice for play
   [TD_QIT]  = ACTION_TAP_DANCE_DOUBLE(KC_END, LALT(KC_F4)),
   [TD_MIN]  = ACTION_TAP_DANCE_DOUBLE(KC_LALT, LALT(KC_Z)),
+  [TD_EMO]  = ACTION_TAP_DANCE_DOUBLE(KC_GRV, LGUI(KC_DOT)),
 // Other declarations would go here, separated by commas, if you have them
 
 };
