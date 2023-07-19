@@ -30,6 +30,19 @@ enum custom_keycodes {
 #define KC_TD2 TD(TD_MIN)
 #define KC_TD3 TD(TD_EMO)
 
+//Windows
+#define KC_WN1 LGUI(KC_1)
+#define KC_WN2 LGUI(KC_2)
+#define KC_WN3 LGUI(KC_3)
+#define KC_WN4 LGUI(KC_4)
+#define KC_WN5 LGUI(KC_5)
+#define KC_WN6 LGUI(KC_6)
+#define KC_WN7 LGUI(KC_7)
+#define KC_WN8 LGUI(KC_8)
+#define KC_WN9 LGUI(KC_9)
+
+
+
 //Emojis
 #define KC_EM1 LCTL(KC_P0)
 #define KC_EM2 (KC_P9)
@@ -52,14 +65,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_80(
     KC_ESC,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_HOME,  KC_F18,
     KC_TD3,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL, _______,  KC_BSPC, KC_DEL,
-    KC_CAPS,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS, KC_PGUP,
-    KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,          KC_ENT,  KC_PGDN,
+    KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS, KC_PGUP,
+    KC_RSFT, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,          KC_ENT,  KC_PGDN,
     KC_LSFT,          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, KC_UP,   KC_TD1,
     KC_LCTL, KC_LGUI, KC_LALT, MO(1),   _______,  LT(2, KC_SPC), _______,           KC_SPC,  KC_RALT, KC_RCTL, MO(3), KC_LEFT, KC_DOWN, KC_RGHT
   ),
   [1] = LAYOUT_80(
     EE_CLR, QK_BOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-    _______, _______, _______, _______, _______, _______, _______,    KC_7,    KC_8,    KC_9, _______, _______, _______,  _______, _______, _______,
+    _______, _______, _______, FL_MAIL, _______, _______, _______,    KC_7,    KC_8,    KC_9, _______, _______, _______,  _______, _______, _______,
     _______, _______, KC_WH_U, KC_UP  , KC_WH_D, KC_PGUP, _______,    KC_4,    KC_5,    KC_6, _______, _______, _______, _______, _______,
     _______, _______, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, _______,    KC_1,    KC_2,    KC_3, _______, _______,          _______, _______,
     KC_TRNS,          _______, _______, _______, _______, _______, _______, KC_0, KC_NUBS, S(KC_NUBS), _______, _______, _______, _______,
@@ -67,7 +80,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [2] = LAYOUT_80(
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
-    _______, _______, _______, FL_MAIL, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______, LCTL(KC_BSPC), _______,
+    _______, KC_WN1, KC_WN2, KC_WN3, KC_WN4, KC_WN5, KC_WN6, KC_WN7, KC_WN8, KC_WN9, _______, _______, _______,  _______, LCTL(KC_BSPC), _______,
     KC_CAPS, KC_HOME, KC_END, KC_MS_U, KC_BTN1, KC_WH_U, KC_EM1 , KC_EM2 , KC_EM3 , KC_EM4 , KC_EM5 , KC_EM6 , KC_EM7 , KC_EM8 , _______,
     KC_RSFT, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, KC_EM9 , KC_EM10, KC_EM11, KC_EM12, KC_EM13, KC_EM14,          _______, _______,
     KC_TRNS,          RALT(KC_X), _______, _______, _______, _______, KC_EM15, KC_EM16, _______, _______, _______, _______, _______, _______,
