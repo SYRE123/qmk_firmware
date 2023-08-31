@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TD3,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL, _______,  KC_BSPC, KC_DEL,
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS, KC_PGUP,
     KC_RSFT, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,          KC_ENT,  KC_PGDN,
-    KC_LSFT,          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, KC_UP,   KC_END,
+    KC_LSFT,          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_LSFT, KC_UP,   KC_END,
     KC_LCTL, KC_LGUI, KC_LALT, MO(1),   _______,  LT(2, KC_SPC), _______,           KC_SPC,  KC_RALT, KC_RCTL, MO(3), KC_LEFT, KC_DOWN, KC_RGHT
   ),
   [1] = LAYOUT_80(
@@ -99,8 +99,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 const uint16_t PROGMEM miniMize_combo[] = {KC_Z, KC_X, COMBO_END};
 const uint16_t PROGMEM copyCopy_combo[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM pastePaste_combo[] = {KC_C, KC_V, COMBO_END};
-const uint16_t PROGMEM markAll_combo[] = {KC_A, KC_S, COMBO_END};
-const uint16_t PROGMEM ctlBspc_combo[] = {KC_RBRC, KC_BSLS, COMBO_END};
+const uint16_t PROGMEM markAll_combo[] = {KC_Q, KC_W, COMBO_END};
+const uint16_t PROGMEM ctlBspc_combo[] = {KC_EQL, KC_BSPC, COMBO_END};
 const uint16_t PROGMEM flStudio_combo[] = {KC_V, KC_B, COMBO_END};
 const uint16_t PROGMEM winBrave_combo[] = {KC_F, KC_G, COMBO_END};
 
