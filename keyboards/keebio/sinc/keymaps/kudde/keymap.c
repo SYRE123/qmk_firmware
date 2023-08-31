@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS, KC_TRNS, KC_TRNS, _______, _______, _______,          _______, _______, KC_TRNS, KC_TRNS, _______, _______, _______, _______
   ),
   [2] = LAYOUT_80(
-    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+    _______, KC_F21 , KC_F22 , KC_F23 , KC_F24 , _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
     _______, KC_WN1, KC_WN2, KC_WN3, KC_WN4, KC_WN5, KC_WN6, KC_WN7, KC_WN8, KC_WN9, _______, _______, _______,  _______, LCTL(KC_BSPC), _______,
     KC_CAPS, KC_HOME, KC_END, KC_MS_U, KC_BTN1, KC_WH_U, KC_EM1 , KC_EM2 , KC_EM3 , KC_EM4 , KC_EM5 , KC_EM6 , KC_EM7 , KC_EM8 , _______,
     KC_RSFT, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, KC_EM9 , KC_EM10, KC_EM11, KC_EM12, KC_EM13, KC_EM14,          _______, _______,
