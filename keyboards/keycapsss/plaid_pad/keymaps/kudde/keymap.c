@@ -18,8 +18,8 @@
 #include <stdio.h>
 
 enum layers {
-    _NUMPAD,
     _FLSTUDIO,
+    _NUM,
     _MEDIA
 };
 
@@ -42,19 +42,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |  0  |  .  |  =  |  +  |
     * `-----------------------'
     */
-    [_NUMPAD] = LAYOUT_ortho_4x4(
+    [_FLSTUDIO] = LAYOUT_ortho_4x4(
+        KC_F6, KC_F7, KC_F9, XXXXXXX,
+        KC_P, KC_B, KC_T, XXXXXXX,
+        KC_R, LCTL(KC_M), LCTL(KC_T), KC_UP,
+        KC_LSFT, KC_F15, KC_SPC, KC_DOWN
+    ),
+    /* Navigation layer
+    */
+    [_NUM] = LAYOUT_ortho_4x4(
         KC_P7, KC_P8,   KC_P9,    KC_PMNS,
         KC_P4, KC_P5,   KC_P6,    KC_PPLS,
         KC_P1, KC_P2,   KC_P3,    KC_BSPC,
         KC_P0, KC_PDOT, KC_NUM,  KC_ENT
-    ),
-    /* Navigation layer
-    */
-    [_FLSTUDIO] = LAYOUT_ortho_4x4(
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        KC_F5, KC_F6,   KC_F7, KC_F9,
-        KC_P, KC_C, KC_T, LSFT(KC_F13)
     ),
     /* MEDIA layer
     */
@@ -68,8 +68,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 // Combos for switching layers
-const uint16_t PROGMEM zeroDot_combo[] = {KC_P0, KC_PDOT, COMBO_END};
-const uint16_t PROGMEM leftDown_combo[] = {KC_P, KC_C, COMBO_END};
+const uint16_t PROGMEM zeroDot_combo[] = {KC_LSFT, KC_F15, COMBO_END};
+const uint16_t PROGMEM leftDown_combo[] = {KC_P0, KC_PDOT, COMBO_END};
 const uint16_t PROGMEM prevPlay_combo[] = {KC_MEDIA_PREV_TRACK, KC_MEDIA_PLAY_PAUSE, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
@@ -82,7 +82,7 @@ void process_combo_event(uint16_t combo_index, bool pressed) {
   switch(combo_index) {
     case COMBO1:
       if (pressed) {
-        layer_move(_FLSTUDIO);
+        layer_move(_NUM);
       }
       break;
     case COMBO2:
@@ -92,7 +92,7 @@ void process_combo_event(uint16_t combo_index, bool pressed) {
       break;
     case COMBO3:
       if (pressed) {
-        layer_move(_NUMPAD);
+        layer_move(_FLSTUDIO);
       }
       break;
   }
@@ -109,10 +109,10 @@ void oled_render_layer_state(void) {
   oled_write_P(PSTR("Layer: "), false);
   if(layer_state_is(_MEDIA)) {
     oled_write_ln_P(PSTR("Media"), false);
-  } else if(layer_state_is(_FLSTUDIO)) {
-    oled_write_ln_P(PSTR("FL Studio"), false);
-  } else {
+  } else if(layer_state_is(_NUM)) {
     oled_write_ln_P(PSTR("Numpad"), false);
+  } else {
+    oled_write_ln_P(PSTR("FL Studio"), false);
   }
 }
 
@@ -127,8 +127,8 @@ bool oled_task_user(void) {
 
 #ifdef ENCODER_MAP_ENABLE
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    [_NUMPAD] = { ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(KC_F20, KC_F19), ENCODER_CCW_CW(KC_F22, KC_F21) },
     [_FLSTUDIO] = { ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(KC_F20, KC_F19), ENCODER_CCW_CW(KC_F22, KC_F21) },
+    [_NUM] = { ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(KC_F20, KC_F19), ENCODER_CCW_CW(KC_F22, KC_F21) },
     [_MEDIA] = { ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(KC_F20, KC_F19), ENCODER_CCW_CW(KC_F22, KC_F21) },
 };
 #endif
