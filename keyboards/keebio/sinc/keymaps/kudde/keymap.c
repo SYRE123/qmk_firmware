@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     EE_CLR, QK_BOOT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
     _______, _______, _______, FL_MAIL, _______, _______, _______,    KC_7,    KC_8,    KC_9, _______, _______, _______,  _______, _______, _______,
     _______, KC_MPLY, KC_WH_U, KC_UP  , KC_WH_D, KC_PGUP, _______,    KC_4,    KC_5,    KC_6, _______, _______, _______, _______, _______,
-    _______, _______, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, _______,    KC_1,    KC_2,    KC_3, _______, _______,          _______, _______,
+    _______, KC_DEL, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, _______,    KC_1,    KC_2,    KC_3, _______, _______,          _______, _______,
     KC_TRNS,          _______, _______, _______, _______, _______, _______, KC_0, KC_NUBS, S(KC_NUBS), _______, _______, _______, _______,
     KC_TRNS, KC_TRNS, KC_TRNS, _______, _______, _______,          _______, _______, KC_TRNS, KC_TRNS, _______, _______, _______, _______
   ),
@@ -101,7 +101,7 @@ const uint16_t PROGMEM copyCopy_combo[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM pastePaste_combo[] = {KC_C, KC_V, COMBO_END};
 const uint16_t PROGMEM markAll_combo[] = {KC_Q, KC_W, COMBO_END};
 const uint16_t PROGMEM ctlBspc_combo[] = {KC_EQL, KC_BSPC, COMBO_END};
-const uint16_t PROGMEM flStudio_combo[] = {KC_V, KC_B, COMBO_END};
+const uint16_t PROGMEM flStudio_combo[] = {KC_D, KC_F, COMBO_END};
 const uint16_t PROGMEM winBrave_combo[] = {KC_F, KC_G, COMBO_END};
 
 combo_t key_combos[] = {
@@ -110,7 +110,7 @@ combo_t key_combos[] = {
   [COMBO3] = COMBO(pastePaste_combo, LCTL(KC_V)),
   [COMBO4] = COMBO(markAll_combo, LCTL(KC_A)),
   [COMBO5] = COMBO(ctlBspc_combo, LCTL(KC_BSPC)),
-  [COMBO6] = COMBO(flStudio_combo, LSFT(KC_F13)),
+  [COMBO6] = COMBO(flStudio_combo, KC_MPLY),
   [COMBO7] = COMBO(winBrave_combo, LGUI(KC_2)),
 };
 

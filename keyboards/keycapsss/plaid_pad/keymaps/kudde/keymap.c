@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_F6, KC_F7, KC_F9, XXXXXXX,
         KC_P, KC_B, KC_T, XXXXXXX,
         KC_R, LCTL(KC_M), LCTL(KC_T), KC_UP,
-        KC_LSFT, KC_F15, KC_SPC, KC_DOWN
+        KC_TAB, KC_F15, KC_SPC, KC_DOWN
     ),
     /* Navigation layer
     */
