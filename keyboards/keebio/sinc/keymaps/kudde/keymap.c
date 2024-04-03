@@ -16,6 +16,7 @@ enum combos {
   COMBO5,
   COMBO6,
   COMBO7,
+  COMBO8,
   COMBO_LENGTH
 };
 uint16_t COMBO_LEN = COMBO_LENGTH;
@@ -62,7 +63,7 @@ enum custom_keycodes {
 #define KC_EM16 (KC_P3)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [0] = LAYOUT_80(
+  [0] = LAYOUT_80(  
     KC_ESC,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_HOME,  KC_F18,
     KC_TD3,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL, _______,  KC_BSPC, KC_DEL,
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS, KC_PGUP,
@@ -75,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, FL_MAIL, _______, _______, _______,    KC_7,    KC_8,    KC_9, _______, _______, _______,  _______, _______, _______,
     _______, KC_MPLY, KC_WH_U, KC_UP  , KC_WH_D, KC_PGUP, _______,    KC_4,    KC_5,    KC_6, _______, _______, _______, _______, _______,
     _______, KC_DEL, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN, _______,    KC_1,    KC_2,    KC_3, _______, _______,          _______, _______,
-    KC_TRNS,          _______, _______, _______, _______, _______, _______, KC_0, KC_NUBS, S(KC_NUBS), _______, _______, _______, _______,
+    KC_TRNS,          KC_VOLD, KC_VOLU, _______, _______, _______, _______, KC_0, KC_NUBS, S(KC_NUBS), _______, _______, _______, _______,
     KC_TRNS, KC_TRNS, KC_TRNS, _______, _______, _______,          _______, _______, KC_TRNS, KC_TRNS, _______, _______, _______, _______
   ),
   [2] = LAYOUT_80(
@@ -83,16 +84,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, KC_WN1, KC_WN2, KC_WN3, KC_WN4, KC_WN5, KC_WN6, KC_WN7, KC_WN8, KC_WN9, _______, _______, _______,  _______, LCTL(KC_BSPC), _______,
     KC_CAPS, KC_HOME, KC_END, KC_MS_U, KC_BTN1, KC_WH_U, KC_EM1 , KC_EM2 , KC_EM3 , KC_EM4 , KC_EM5 , KC_EM6 , KC_EM7 , KC_EM8 , _______,
     KC_RSFT, KC_BTN2, KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, KC_EM9 , KC_EM10, KC_EM11, KC_EM12, KC_EM13, KC_EM14,          _______, _______,
-    KC_TRNS,          RALT(KC_X), _______, _______, _______, _______, KC_EM15, KC_EM16, _______, _______, _______, _______, _______, _______,
+    KC_TRNS,          RALT(KC_X), KC_MPLY, KC_VOLD, KC_VOLU, _______, KC_EM15, KC_EM16, _______, _______, _______, _______, _______, _______,
     KC_TRNS, KC_TRNS, KC_TRNS, _______, _______, _______,          _______, _______, KC_TRNS, KC_TRNS, _______, _______, _______, _______
   ),
   [3] = LAYOUT_80(
     _______, KC_F13 , KC_F14 , KC_F15 , KC_F16 , KC_F17 , KC_F18 , KC_F19 , KC_F20 , KC_F21 , KC_F22 , KC_F23 , KC_F24 , _______, _______,
     RGB_TOG, _______  , _______ , _______, _______, _______, _______, _______, _______, _______, _______,  RGB_RMOD, RGB_MOD,  _______, _______, NK_TOGG,
-    _______, RGB_SAD  , RGB_SAI , _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, EE_CLR,
+    _______, RGB_SAD  , RGB_SAI , _______, _______, _______, _______, _______, _______, _______, _______, _______, TO(4), _______, EE_CLR,
     _______, RGB_VAD  , RGB_VAI , _______, _______, _______, _______, _______, _______, _______, _______, _______,          _______, QK_BOOT,
     KC_TRNS,            RGB_SPD , RGB_SPI, _______, _______, _______, _______, _______, _______, _______, _______, _______, CM_ON, _______,
     KC_TRNS, KC_TRNS, KC_TRNS, _______, _______, _______,          _______, _______, KC_TRNS, KC_TRNS, _______, _______, CM_OFF, WIN_LOGIN
+  ),
+  [4] = LAYOUT_80(
+    KC_ESC,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_HOME,  KC_F18,
+    KC_TD3,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL, _______,  KC_BSPC, KC_DEL,
+    KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, TO(0), KC_PGUP,
+    KC_RSFT, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,          KC_ENT,  KC_PGDN,
+    KC_LSFT,          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_LSFT, KC_UP,   KC_END,
+    KC_LCTL, KC_LGUI, KC_LALT, MO(1),   _______,  KC_SPC, _______,           KC_SPC,  KC_RALT, KC_RCTL, MO(3), KC_LEFT, KC_DOWN, KC_RGHT
   ),
 };
 
@@ -103,15 +112,17 @@ const uint16_t PROGMEM markAll_combo[] = {KC_Q, KC_W, COMBO_END};
 const uint16_t PROGMEM ctlBspc_combo[] = {KC_EQL, KC_BSPC, COMBO_END};
 const uint16_t PROGMEM flStudio_combo[] = {KC_D, KC_F, COMBO_END};
 const uint16_t PROGMEM winBrave_combo[] = {KC_F, KC_G, COMBO_END};
+const uint16_t PROGMEM markEve_combo[] = {KC_X, KC_C, KC_V, COMBO_END};
 
 combo_t key_combos[] = {
-  [COMBO1] = COMBO(miniMize_combo, RALT(KC_X)),
+  [COMBO1] = COMBO(miniMize_combo, RALT(KC_X)), 
   [COMBO2] = COMBO(copyCopy_combo, LCTL(KC_C)),
   [COMBO3] = COMBO(pastePaste_combo, LCTL(KC_V)),
   [COMBO4] = COMBO(markAll_combo, LCTL(KC_A)),
   [COMBO5] = COMBO(ctlBspc_combo, LCTL(KC_BSPC)),
   [COMBO6] = COMBO(flStudio_combo, KC_MPLY),
-  [COMBO7] = COMBO(winBrave_combo, LGUI(KC_2)),
+  [COMBO7] = COMBO(winBrave_combo, LGUI(KC_2))
+,  [COMBO8] = COMBO(markEve_combo, LCTL(KC_A)),
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -166,5 +177,6 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [1] = { ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(KC_F21, KC_F22) },
     [2] = { ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(KC_F23, KC_F24) },
     [3] = { ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(RGB_HUD, RGB_HUI) },
+    [4] = { ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(KC_F19, KC_F20) },
 };
 #endif

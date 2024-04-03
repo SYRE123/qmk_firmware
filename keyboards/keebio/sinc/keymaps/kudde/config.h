@@ -33,5 +33,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_SLEEP
 #define COMBO_TERM 25
 #define ENCODER_RESOLUTION 4
-#define DEBOUNCE 25 //default is 5
+#define DEBOUNCE 12 //default is 5
 //#define COMBO_COUNT 3
