@@ -1,0 +1,4 @@
+CUSTOM_MATRIX = lite
+SRC += matrix.c
+
+POINTING_DEVICE_DRIVER = pmw3360
