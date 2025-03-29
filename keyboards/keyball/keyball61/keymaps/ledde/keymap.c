@@ -88,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     RGB_MOD  , RGB_HUI  , RGB_SAI  , RGB_VAI  , _______  , _______  ,                                  KC_EM1 , KC_EM2  , KC_EM3  , KC_EM4 , KC_EM5  , KC_EM6  ,
     RGB_RMOD , RGB_HUD  , RGB_SAD  , RGB_VAD  , _______  , _______  ,                                  KC_EM9 , KC_EM10 , KC_EM11 , KC_EM12  , KC_EM12 , KC_EM14  ,
     _______  , _______  , _______ , _______ , _______ , _______ , KC_EM8   ,            KC_EM7   , KC_EM15  , KC_EM16  , KC_PGUP  , KC_END   , _______  , _______  ,
-    QK_BOOT  , _______  , KC_LEFT  , KC_DOWN  , KC_UP    , KC_RGHT  , _______  ,            _______  , KC_BSPC  , _______  , _______  , _______  , _______  , QK_BOOT
+    QK_BOOT  , _______  , _______ , _______ , _______ , _______ , _______  ,            _______  , KC_BSPC  , _______  , _______  , _______  , _______  , QK_BOOT
   ),
 };
 // clang-format on
@@ -113,6 +113,11 @@ combo_t key_combos[] = {
   [COMBO7] = COMBO(winBrave_combo, LGUI(KC_2)),
   [COMBO8] = COMBO(markEve_combo, LCTL(KC_A)),
 };
+
+
+void pointing_device_init_user(void) {
+    set_auto_mouse_enable(true);         // always required before the auto mouse feature will work
+}
 
 bool set_scrolling = false;
 
@@ -144,18 +149,6 @@ report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
     return mouse_report;
 }
 
-void pointing_device_init_user(void) {
-    set_auto_mouse_enable(true);         // always required before the auto mouse feature will work
-}
-
-layer_state_t layer_state_set_user(layer_state_t state) {
-    // Disable set_scrolling if the current layer is not the AUTO_MOUSE_DEFAULT_LAYER
-    if (get_highest_layer(state) != AUTO_MOUSE_DEFAULT_LAYER) {
-        set_scrolling = false;
-    }
-    return state;
-}
-
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
         switch(keycode){
@@ -176,4 +169,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             break;
     }
     return true;
+}
+
+layer_state_t layer_state_set_user(layer_state_t state) {
+    // Disable set_scrolling if the current layer is not the AUTO_MOUSE_DEFAULT_LAYER
+    if (get_highest_layer(state) != AUTO_MOUSE_DEFAULT_LAYER) {
+        set_scrolling = false;
+    }
+    return state;
 };
