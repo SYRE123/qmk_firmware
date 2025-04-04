@@ -62,31 +62,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_universal(
     KC_ESC   , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,                                  KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , KC_MINS  ,
     KC_TAB   , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                  KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_LBRC  ,
-    KC_LCTL  , KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                  KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  , KC_QUOT  ,
+    KC_RSFT  , KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                  KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  , KC_QUOT  ,
     KC_LSFT  , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     , KC_RBRC  ,              KC_NUHS, KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_DEL   ,
-    KC_LCTL  , KC_LCTL  , KC_LGUI  , LT(2,KC_MPLY),KC_LALT,LT(1,KC_BSPC),LT(3,KC_SPC),    KC_BSPC,KC_SPC,LT(1,KC_LNG2),KC_RGUI, _______ , KC_RALT  , KC_ENT
+    KC_LCTL  , KC_LGUI  , RALT(KC_X)  , LT(2,KC_MPLY),KC_LALT,LT(1,KC_BSPC),LT(3,KC_SPC),    KC_BSPC,KC_SPC,LT(1,KC_LNG2),KC_RGUI, _______ , KC_RALT  , KC_ENT
   ),
 
   [1] = LAYOUT_universal(
     KC_ESC   , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,                                  KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , KC_MINS  ,
-    KC_TAB   , KC_HOME  , KC_WH_U  , KC_UP    , KC_END   , KC_PGUP  ,                                  KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_LBRC  ,
-    KC_LCTL  , KC_DEL   , KC_LEFT  , KC_DOWN  , KC_RGHT  , KC_PGDN  ,                                  KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  , KC_QUOT  ,
-    KC_LSFT  , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     , KC_RBRC  ,              KC_NUHS, KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_ENT   ,
+    KC_TAB   , KC_HOME  , KC_END   , KC_UP    , KC_HOME  , KC_PGUP  ,                                  KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_LBRC  ,
+    KC_RSFT  , KC_DEL   , KC_LEFT  , KC_DOWN  , KC_RGHT  , KC_PGDN  ,                                  KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  , KC_QUOT  ,
+    KC_LSFT  , KC_Z     , KC_X     , KC_WBAK  , KC_WFWD  , KC_B     , KC_RBRC  ,              KC_NUHS, KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_ENT   ,
     _______  , _______  , _______  , _______  , _______  , _______  , _______  ,            _______  , _______  , _______  ,_______ , _______  , _______ , _______
   ),
 
   [2] = LAYOUT_universal(
     _______  , KC_F1    , KC_F2    , KC_F3    , KC_F4    , KC_F5    ,                                  KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10   , KC_F11   ,
     _______  , _______  , _______  , _______  , _______  , _______  ,                                  _______  , KC_LEFT  , KC_UP    , KC_RGHT  , _______  , KC_F12   ,
-    _______  , KC_BTN2  , RALT(KC_X),DRAG_SCROLL, KC_BTN1  , KC_PGUP ,                                 KC_PGUP  , KC_BTN1  , DRAG_SCROLL  , KC_BTN2  , KC_BTN3  , NK_TOGG  ,
-    _______  , KC_BTN2  , _______  , KC_BTN3  , S(KC_BTN3) ,KC_PGDN , _______,              S(KC_9)  , KC_PGDN  ,S(KC_BTN3), _______  , _______  ,  CM_OFF  ,  CM_ON   ,
+    _______  , KC_BTN2  , RALT(KC_X),KC_BTN3, KC_BTN1  , KC_PGUP ,                                 KC_PGUP  , KC_BTN1  , KC_BTN3  , KC_BTN2  , KC_BTN3  , NK_TOGG  ,
+    _______  , KC_BTN2  , _______  , KC_WBAK  , S(KC_BTN3) ,KC_PGDN , _______,              S(KC_9)  , KC_PGDN  ,S(KC_BTN3), DRAG_SCROLL , _______  ,  CM_OFF  ,  CM_ON   ,
     _______  , _______  , _______  , _______  , _______  , _______  , _______  ,             KC_DEL  , _______  , _______  , _______  , _______  , _______  , _______
   ),
 
   [3] = LAYOUT_universal(
-    RGB_TOG  , _______  , _______ , _______ , _______  , _______  ,                                  RGB_M_P  , RGB_M_B  , RGB_M_R  , RGB_M_SW , RGB_M_SN , RGB_M_K  ,
+    RGB_TOG  , QK_BOOT  , _______ , _______ , _______  , _______  ,                                  RGB_M_P  , RGB_M_B  , RGB_M_R  , RGB_M_SW , RGB_M_SN , RGB_M_K  ,
     RGB_MOD  , RGB_HUI  , RGB_SAI  , RGB_VAI  , _______  , _______  ,                                  KC_EM1 , KC_EM2  , KC_EM3  , KC_EM4 , KC_EM5  , KC_EM6  ,
-    RGB_RMOD , RGB_HUD  , RGB_SAD  , RGB_VAD  , _______  , _______  ,                                  KC_EM9 , KC_EM10 , KC_EM11 , KC_EM12  , KC_EM12 , KC_EM14  ,
+    RGB_RMOD , RGB_HUD  , RGB_SAD  , RGB_VAD  , KC_BTN1  , _______  ,                                  KC_EM9 , KC_EM10 , KC_EM11 , KC_EM12  , KC_EM12 , KC_EM14  ,
     _______  , _______  , _______ , _______ , _______ , _______ , KC_EM8   ,            KC_EM7   , KC_EM15  , KC_EM16  , KC_PGUP  , KC_END   , _______  , _______  ,
     QK_BOOT  , _______  , _______ , _______ , _______ , _______ , _______  ,            _______  , KC_BSPC  , _______  , _______  , _______  , _______  , QK_BOOT
   ),
@@ -122,7 +122,7 @@ void pointing_device_init_user(void) {
 bool set_scrolling = false;
 
 #define SCROLL_DIVISOR_H 80.0
-#define SCROLL_DIVISOR_V 80.0
+#define SCROLL_DIVISOR_V 40.0
 
 float scroll_accumulated_h = 0;
 float scroll_accumulated_v = 0;
@@ -132,7 +132,7 @@ report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
     if (set_scrolling) {
         // Calculate and accumulate scroll values based on mouse movement and divisors
         scroll_accumulated_h += (float)mouse_report.x / SCROLL_DIVISOR_H;
-        scroll_accumulated_v += (float)mouse_report.y / SCROLL_DIVISOR_V;
+        scroll_accumulated_v += (float)-mouse_report.y / SCROLL_DIVISOR_V;
 
         // Assign integer parts of accumulated scroll values to the mouse report
         mouse_report.h = (int8_t)scroll_accumulated_h;
@@ -149,6 +149,30 @@ report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
     return mouse_report;
 }
 
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+    case DRAG_SCROLL:
+      if (record->event.pressed) {
+        set_scrolling = true;
+      } else {
+        set_scrolling = false;
+      }
+      break;
+    default:
+      break; // Process all other keycodes normally
+  }
+  return true;
+}
+
+bool is_mouse_record_user(uint16_t keycode, keyrecord_t* record) {
+    switch(keycode) {
+        case DRAG_SCROLL:
+            return true;
+    }
+    return  false;
+}
+
+/*
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
         switch(keycode){
@@ -170,6 +194,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
     return true;
 }
+*/
+
+
 
 layer_state_t layer_state_set_user(layer_state_t state) {
     // Disable set_scrolling if the current layer is not the AUTO_MOUSE_DEFAULT_LAYER
