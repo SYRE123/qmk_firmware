@@ -71,15 +71,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC   , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,                                  KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , KC_MINS  ,
     KC_TAB   , KC_HOME  , KC_END   , KC_UP    , KC_HOME  , KC_PGUP  ,                                  KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_LBRC  ,
     KC_RSFT  , KC_DEL   , KC_LEFT  , KC_DOWN  , KC_RGHT  , KC_PGDN  ,                                  KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  , KC_QUOT  ,
-    KC_LSFT  , KC_Z     , KC_X     , KC_WBAK  , KC_WFWD  , KC_B     , KC_RBRC  ,              KC_NUHS, KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_ENT   ,
+    KC_LSFT  , KC_Z     ,RALT(KC_X), KC_WBAK  , KC_WFWD  , KC_B     , KC_RBRC  ,              KC_NUHS, KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_ENT   ,
     _______  , _______  , _______  , _______  , _______  , _______  , _______  ,            _______  , _______  , _______  ,_______ , _______  , _______ , _______
   ),
 
   [2] = LAYOUT_universal(
     _______  , KC_F1    , KC_F2    , KC_F3    , KC_F4    , KC_F5    ,                                  KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10   , KC_F11   ,
-    _______  , _______  , _______  , _______  , _______  , _______  ,                                  _______  , KC_LEFT  , KC_UP    , KC_RGHT  , _______  , KC_F12   ,
-    _______  , KC_BTN2  , RALT(KC_X),KC_BTN3, KC_BTN1  , KC_PGUP ,                                 KC_PGUP  , KC_BTN1  , KC_BTN3  , KC_BTN2  , KC_BTN3  , NK_TOGG  ,
-    _______  , KC_BTN2  , _______  , KC_WBAK  , S(KC_BTN3) ,KC_PGDN , _______,              S(KC_9)  , KC_PGDN  ,S(KC_BTN3), DRAG_SCROLL , _______  ,  CM_OFF  ,  CM_ON   ,
+    _______  , _______  , _______  , LCTL(LSFT(KC_TAB))  , LCTL(KC_TAB)  , _______  ,                 _______  , KC_LEFT  , KC_UP    , KC_RGHT  , _______  , KC_F12   ,
+    _______  , KC_BTN2  , KC_BTN3 ,DRAG_SCROLL, KC_BTN1  , KC_PGUP ,                                 KC_PGUP  , KC_BTN1  ,DRAG_SCROLL, KC_BTN3  , KC_BTN2  , NK_TOGG  ,
+    _______  ,RALT(KC_X), LCTL(KC_W)  , KC_WBAK  , S(KC_BTN3) ,KC_PGDN , _______,              S(KC_9)  , KC_PGDN  ,S(KC_BTN3), _______ , _______  ,  CM_OFF  ,  CM_ON   ,
     _______  , _______  , _______  , _______  , _______  , _______  , _______  ,             KC_DEL  , _______  , _______  , _______  , _______  , _______  , _______
   ),
 
@@ -121,8 +121,8 @@ void pointing_device_init_user(void) {
 
 bool set_scrolling = false;
 
-#define SCROLL_DIVISOR_H 80.0
-#define SCROLL_DIVISOR_V 40.0
+#define SCROLL_DIVISOR_H 100.0
+#define SCROLL_DIVISOR_V 60.0
 
 float scroll_accumulated_h = 0;
 float scroll_accumulated_v = 0;
