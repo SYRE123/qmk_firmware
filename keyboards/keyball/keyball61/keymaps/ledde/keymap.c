@@ -29,6 +29,8 @@ enum combos {
   COMBO6,
   COMBO7,
   COMBO8,
+  COMBO9,
+  COMBO10,
   COMBO_LENGTH
 };
 uint16_t COMBO_LEN = COMBO_LENGTH;
@@ -84,9 +86,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [3] = LAYOUT_universal(
-    RGB_TOG  , QK_BOOT  , _______ , _______ , _______  , _______  ,                                  RGB_M_P  , RGB_M_B  , RGB_M_R  , RGB_M_SW , RGB_M_SN , RGB_M_K  ,
-    RGB_MOD  , RGB_HUI  , RGB_SAI  , RGB_VAI  , _______  , _______  ,                                  KC_EM1 , KC_EM2  , KC_EM3  , KC_EM4 , KC_EM5  , KC_EM6  ,
-    RGB_RMOD , RGB_HUD  , RGB_SAD  , RGB_VAD  , KC_BTN1  , _______  ,                                  KC_EM9 , KC_EM10 , KC_EM11 , KC_EM12  , KC_EM12 , KC_EM14  ,
+    RGB_TOG  , RGB_HUI  , RGB_SAI , RGB_VAI , _______  , _______  ,                                  _______  , _______  , _______  , _______ , _______ , _______  ,
+    RGB_MOD  , RGB_HUD  , RGB_SAD  , RGB_VAD  , _______  , _______  ,                                  KC_EM1 , KC_EM2  , KC_EM3  , KC_EM4 , KC_EM5  , KC_EM6  ,
+    RGB_RMOD , _______  , _______  , _______  , _______  , _______  ,                                  KC_EM9 , KC_EM10 , KC_EM11 , KC_EM12  , KC_EM12 , KC_EM14  ,
     _______  , _______  , _______ , _______ , _______ , _______ , KC_EM8   ,            KC_EM7   , KC_EM15  , KC_EM16  , KC_PGUP  , KC_END   , _______  , _______  ,
     QK_BOOT  , _______  , _______ , _______ , _______ , _______ , _______  ,            _______  , KC_BSPC  , _______  , _______  , _______  , _______  , QK_BOOT
   ),
@@ -102,6 +104,9 @@ const uint16_t PROGMEM ctlBspc_combo[] = {KC_0, KC_MINS, COMBO_END};
 const uint16_t PROGMEM flStudio_combo[] = {KC_D, KC_F, COMBO_END};
 const uint16_t PROGMEM winBrave_combo[] = {KC_F, KC_G, COMBO_END};
 const uint16_t PROGMEM markEve_combo[] = {KC_X, KC_C, KC_V, COMBO_END};
+const uint16_t PROGMEM ent_combo[] = {KC_J, KC_K, KC_L, COMBO_END};
+const uint16_t PROGMEM bspcBspc_combo[] = {KC_P, KC_LBRC, COMBO_END};
+
 
 combo_t key_combos[] = {
   [COMBO1] = COMBO(miniMize_combo, RALT(KC_X)), 
@@ -112,6 +117,8 @@ combo_t key_combos[] = {
   [COMBO6] = COMBO(flStudio_combo, KC_MPLY),
   [COMBO7] = COMBO(winBrave_combo, LGUI(KC_2)),
   [COMBO8] = COMBO(markEve_combo, LCTL(KC_A)),
+  [COMBO9] = COMBO(ent_combo, KC_ENT),
+  [COMBO10] = COMBO(bspcBspc_combo, LCTL(KC_BSPC)),
 };
 
 
