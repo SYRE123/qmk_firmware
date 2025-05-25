@@ -26,3 +26,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #define AUTO_MOUSE_DEFAULT_LAYER 2
 #define AUTO_MOUSE_TIME 750
+#define AUTO_MOUSE_THRESHOLD 25 //default 10
+#define MOUSEKEY_DELAY             16
+#define MOUSEKEY_INTERVAL          16
+#define MOUSEKEY_MAX_SPEED         16
+#define MOUSEKEY_TIME_TO_MAX       60
+#define MOUSEKEY_WHEEL_MAX_SPEED   4
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 55

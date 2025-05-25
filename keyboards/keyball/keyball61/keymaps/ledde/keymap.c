@@ -58,6 +58,9 @@ enum custom_keycodes {
 #define KC_EM14 (KC_P7)
 #define KC_EM15 (KC_P2)
 #define KC_EM16 (KC_P3)
+//Div
+#define TAB_RGT LCTL(KC_TAB)
+#define TAB_LFT LCTL(LSFT(KC_TAB))
 
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -65,30 +68,30 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC   , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,                                  KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , KC_MINS  ,
     KC_TAB   , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,                                  KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_LBRC  ,
     KC_RSFT  , KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,                                  KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  , KC_QUOT  ,
-    KC_LSFT  , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     , KC_RBRC  ,              KC_NUHS, KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_DEL   ,
-    KC_LCTL  , KC_LGUI  , RALT(KC_X)  , LT(2,KC_MPLY),KC_LALT,LT(1,KC_BSPC),LT(3,KC_SPC),    KC_BSPC,KC_SPC,LT(1,KC_LNG2),KC_RGUI, _______ , KC_RALT  , KC_ENT
+    KC_LSFT  , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     , KC_RBRC  ,              KC_BSLS, KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_DEL   ,
+    KC_LCTL  , KC_LGUI  , RALT(KC_X)  , LT(2,KC_MPLY),KC_LALT,LT(3,KC_BSPC),LT(1,KC_SPC),    KC_BSPC,KC_SPC,LT(1,KC_LNG2),KC_RGUI, _______ , KC_RALT  , KC_ENT
   ),
 
   [1] = LAYOUT_universal(
     KC_ESC   , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,                                  KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , KC_MINS  ,
-    KC_TAB   , KC_HOME  , KC_END   , KC_UP    , KC_HOME  , KC_PGUP  ,                                  KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_LBRC  ,
-    KC_RSFT  , KC_DEL   , KC_LEFT  , KC_DOWN  , KC_RGHT  , KC_PGDN  ,                                  KC_H     , KC_J     , KC_K     , KC_L     , KC_SCLN  , KC_QUOT  ,
-    KC_LSFT  , KC_Z     ,RALT(KC_X), KC_WBAK  , KC_WFWD  , KC_B     , KC_RBRC  ,              KC_NUHS, KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_ENT   ,
+    KC_TAB   , KC_HOME  , KC_END   , KC_UP    , KC_HOME  , KC_PGUP  ,                                  KC_Y     , KC_4     , KC_5     , KC_6     , KC_P     , KC_LBRC  ,
+    KC_RSFT  , KC_DEL   , KC_LEFT  , KC_DOWN  , KC_RGHT  , KC_PGDN  ,                                  KC_H     , KC_1     , KC_2     , KC_3     , KC_SCLN  , KC_QUOT  ,
+    KC_LSFT  , KC_Z     ,RALT(KC_X), KC_WBAK  , KC_WFWD  , KC_B     , KC_RBRC  ,              KC_NUHS, KC_N     , KC_0     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_ENT   ,
     _______  , _______  , _______  , _______  , _______  , _______  , _______  ,            _______  , _______  , _______  ,_______ , _______  , _______ , _______
   ),
 
   [2] = LAYOUT_universal(
     _______  , KC_F1    , KC_F2    , KC_F3    , KC_F4    , KC_F5    ,                                  KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10   , KC_F11   ,
-    _______  , _______  , _______  , LCTL(LSFT(KC_TAB))  , LCTL(KC_TAB)  , _______  ,                 _______  , KC_LEFT  , KC_UP    , KC_RGHT  , _______  , KC_F12   ,
+    _______  , _______  , LCTL(KC_R)  , TAB_LFT , TAB_RGT, _______,                 _______  , KC_LEFT  , KC_UP    , KC_RGHT  , _______  , KC_F12   ,
     _______  , KC_BTN2  , KC_BTN3 ,DRAG_SCROLL, KC_BTN1  , KC_PGUP ,                                 KC_PGUP  , KC_BTN1  ,DRAG_SCROLL, KC_BTN3  , KC_BTN2  , NK_TOGG  ,
     _______  ,RALT(KC_X), LCTL(KC_W)  , KC_WBAK  , S(KC_BTN3) ,KC_PGDN , _______,              S(KC_9)  , KC_PGDN  ,S(KC_BTN3), _______ , _______  ,  CM_OFF  ,  CM_ON   ,
     _______  , _______  , _______  , _______  , _______  , _______  , _______  ,             KC_DEL  , _______  , _______  , _______  , _______  , _______  , _______
   ),
 
   [3] = LAYOUT_universal(
-    RGB_TOG  , RGB_HUI  , RGB_SAI , RGB_VAI , _______  , _______  ,                                  _______  , _______  , _______  , _______ , _______ , _______  ,
-    RGB_MOD  , RGB_HUD  , RGB_SAD  , RGB_VAD  , _______  , _______  ,                                  KC_EM1 , KC_EM2  , KC_EM3  , KC_EM4 , KC_EM5  , KC_EM6  ,
-    RGB_RMOD , _______  , _______  , _______  , _______  , _______  ,                                  KC_EM9 , KC_EM10 , KC_EM11 , KC_EM12  , KC_EM12 , KC_EM14  ,
+    RGB_TOG  , RGB_HUI  , RGB_HUD , RGB_VAI , RGB_VAD , RGB_SAI ,                                  RGB_SAD  , RGB_MOD  , RGB_RMOD  , _______ , _______ , _______  ,
+    _______  , KC_HOME  , KC_END  , KC_MS_U , KC_BTN1 , KC_WH_U ,                                  KC_EM1 , KC_EM2  , KC_EM3  , KC_EM4 , KC_EM5  , KC_EM6  ,
+    _______  , KC_BTN2  , KC_MS_L , KC_MS_D , KC_MS_R , KC_WH_D ,                                  KC_EM9 , KC_EM10 , KC_EM11 , KC_EM12  , KC_EM12 , KC_EM14  ,
     _______  , _______  , _______ , _______ , _______ , _______ , KC_EM8   ,            KC_EM7   , KC_EM15  , KC_EM16  , KC_PGUP  , KC_END   , _______  , _______  ,
     QK_BOOT  , _______  , _______ , _______ , _______ , _______ , _______  ,            _______  , KC_BSPC  , _______  , _______  , _______  , _______  , QK_BOOT
   ),
@@ -104,7 +107,7 @@ const uint16_t PROGMEM ctlBspc_combo[] = {KC_0, KC_MINS, COMBO_END};
 const uint16_t PROGMEM flStudio_combo[] = {KC_D, KC_F, COMBO_END};
 const uint16_t PROGMEM winBrave_combo[] = {KC_F, KC_G, COMBO_END};
 const uint16_t PROGMEM markEve_combo[] = {KC_X, KC_C, KC_V, COMBO_END};
-const uint16_t PROGMEM ent_combo[] = {KC_J, KC_K, KC_L, COMBO_END};
+const uint16_t PROGMEM ent_combo[] = {KC_J, KC_K, COMBO_END};
 const uint16_t PROGMEM bspcBspc_combo[] = {KC_P, KC_LBRC, COMBO_END};
 
 
@@ -174,12 +177,30 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 bool is_mouse_record_user(uint16_t keycode, keyrecord_t* record) {
     switch(keycode) {
         case DRAG_SCROLL:
+        case KC_PGUP:
+        case KC_PGDN:
+        case TAB_LFT:
+        case TAB_RGT:
             return true;
     }
     return  false;
 }
 
+
 /*
+bool is_mouse_record_kb(uint16_t keycode, keyrecord_t* record) {
+    switch(keycode) {
+        case KC_PGUP:
+            return true;
+        case KC_PGDN:
+            return true;
+        default:
+            return false;
+    }
+    return  is_mouse_record_user(keycode, record);
+}
+
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
         switch(keycode){
